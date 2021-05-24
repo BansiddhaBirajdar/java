@@ -1,0 +1,22 @@
+import java.util.Arrays;
+
+class FindSecondHighestNumber {
+    public static void main(String[] args) {
+        int []arr =new int[]{-1,2,10,0,5,11,15};
+        int high=Integer.MIN_VALUE;
+        int secondhigh=Integer.MIN_VALUE;
+        for(int value:arr){
+            if(value>small){
+                secondhigh=small;
+                high=value;
+            }
+            if(value<high && value>secondhigh){
+                secondhigh=value;
+            }
+        }
+        System.out.printf("Second highest number is %d",secondhigh);
+        // first way with sorting find the second highest number
+        // Arrays.sort(arr);
+        // System.out.printf("Second highest number is %d",arr[arr.length-2]);
+    }
+}
